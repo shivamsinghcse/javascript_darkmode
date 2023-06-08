@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="shiva">
+    <div >
+        shivam singh
+        <button id="darkmode" onclick="darkmode()">Dark mode</button>
+    </div>
+    <script>
+        let abc = document.getElementById("shiva");
+        function darkmode(){
+            abc.style.color='white';
+            abc.style.backgroundColor= 'black';
+            document.getElementById('darkmode').innerHTML = 'Light Mode';
+            document.getElementById('darkmode').onclick=lightMode;
+        }
+        function lightMode(){
+            abc.style.color='black';
+            abc.style.backgroundColor= 'white';
+            document.getElementById('darkmode').innerHTML = 'DarkMode';
+            document.getElementById('darkmode').onclick=darkmode;
+        }
+    </script>
+</body>
+</html>
